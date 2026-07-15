@@ -1,0 +1,32 @@
+# Large raw sequencing files
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.sra
+
+# Alignment files
+*.sam
+*.bam
+*.bai
+
+# Compressed outputs
+*.zip
+*.tar
+*.gz
+
+# Large project data folders
+data/raw/*
+data/processed/*
+data/reference/*
+results/*
+logs/*
+
+# Keep folder placeholders
+!**/.gitkeep
+
+# System and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
