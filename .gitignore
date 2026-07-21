@@ -30,3 +30,22 @@ logs/*
 Thumbs.db
 *.swp
 *.tmp
+# Large sequencing files
+*.fastq
+*.fq
+*.fastq.gz
+*.fq.gz
+*.sra
+
+# Raw and trimmed sequencing data
+data/raw/*
+data/trimmed/*
+
+# Keep folder placeholders
+!data/raw/.gitkeep
+!data/trimmed/.gitkeep
+
+# Temporary files
+*.tmp
+*.log
+.DS_Store
