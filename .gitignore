@@ -49,3 +49,24 @@ data/trimmed/*
 *.tmp
 *.log
 .DS_Store
+
+# Large alignment files
+*.sam
+*.bam
+*.bai
+
+# HISAT2 index files are large
+data/reference/hisat2_index/*
+*.ht2
+*.ht2l
+
+# Large reference files
+*.fa
+*.fa.gz
+*.gtf
+*.gtf.gz
+
+# Keep metadata and scripts
+!data/metadata/
+!scripts/
+
