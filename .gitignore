@@ -70,3 +70,12 @@ data/reference/hisat2_index/*
 !data/metadata/
 !scripts/
 
+# Alignment files from Galaxy/HISAT2
+*.sam
+*.bam
+*.bai
+
+# Optional Galaxy downloaded BAM names
+*Galaxy*.bam
+*Galaxy*.bai
+*Galaxy*.sam
