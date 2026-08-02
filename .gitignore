@@ -19,7 +19,7 @@
 data/raw/*
 data/processed/*
 data/reference/*
-results/*
+# results/*
 logs/*
 
 # Keep folder placeholders
@@ -49,6 +49,9 @@ data/trimmed/*
 *.tmp
 *.log
 .DS_Store
+tmp_fasterq/
+*.tmp
+*.tem
 
 # Large alignment files
 *.sam
@@ -79,3 +82,35 @@ data/reference/hisat2_index/*
 *Galaxy*.bam
 *Galaxy*.bai
 *Galaxy*.sam
+
+*.fastq
+*.fastq.gz
+*.sra
+*.sam
+*.bam
+*.bai
+*.fa
+*.fa.gz
+*.gtf
+*.gtf.gz
+*.ht2
+*.ht2l
+tmp_fasterq/
+
+# -----------------------------
+# Ignore heavy RNA-seq files
+# -----------------------------
+
+# Raw sequencing files
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+
+# Alignment files
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
