@@ -115,3 +115,5 @@ tmp_fasterq/
 *.cram
 *.crai
 .Rproj.user
+.Rhistory
+backup_deseq2_local/
