@@ -1,0 +1,3 @@
+"Contrast","Total_genes_tested","Significant_DEGs","Upregulated","Downregulated","Top_5_GO_BP_terms","Top_3_KEGG_pathways"
+"InfluenzaA_Day4_vs_NonInfected_Day0",31556,26,19,7,"response to virus; defense response to virus","No significant KEGG pathways"
+"InfluenzaA_Day8_vs_NonInfected_Day0",31556,594,356,238,"response to interferon-beta; cellular response to interferon-beta; response to type II interferon; nucleotide-binding domain, leucine rich repeat containing receptor signaling pathway; positive regulation of cytokine-mediated signaling pathway","Ether lipid metabolism; alpha-Linolenic acid metabolism; Linoleic acid metabolism"

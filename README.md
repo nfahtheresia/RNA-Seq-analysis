@@ -1,5 +1,5 @@
 
-##Name
+## Name
 Theresia Ngonda Nfah
 
 ## Program Title
@@ -13,15 +13,6 @@ This project uses six publicly available RNA-seq samples from NCBI GEO/SRA serie
 ## HISAT2 Alignment Summary
 
 The trimmed paired-end RNA-seq reads were aligned to the Mus musculus GRCm39 reference genome using HISAT2. Alignment summaries were generated for each sample, and the overall alignment rates are shown below.
-
-| SampleID | Overall alignment rate | Flag |
-|---|---:|---|
-| SRR5364316 | paste_rate_here | PASS |
-| SRR5364317 | paste_rate_here | PASS |
-| SRR5364318 | paste_rate_here | PASS |
-| SRR5364321 | paste_rate_here | PASS |
-| SRR5364323 | paste_rate_here | PASS |
-| SRR5364330 | paste_rate_here | PASS |
 
 Samples with overall alignment rate below 75% were flagged as low-alignment samples. A low alignment rate may result from poor read quality, adapter contamination, wrong reference genome, sample contamination, or using reads from a different organism.
 
@@ -54,3 +45,39 @@ Significant DEGs were defined as genes with adjusted p-value < 0.05 and absolute
 - `results/deseq2/vst_normalized_count_matrix.csv`
 - `results/deseq2/DESeq2_significant_DEGs_InfluenzaA_Day4_vs_NonInfected_Day0.csv`
 - `results/deseq2/DESeq2_significant_DEGs_InfluenzaA_Day8_vs_NonInfected_Day0.csv`
+
+## Visualisation, Pathway Analysis and Final Report
+
+This repository contains a complete RNA-seq analysis workflow for mouse influenza A infection data. The project includes raw data acquisition, quality control, trimming, genome alignment, read counting, differential gene expression analysis, visualization, GO Biological Process enrichment, KEGG pathway enrichment, and final report generation.
+
+### Project Topic
+
+Differential gene expression analysis of mouse cerebellum during influenza A infection
+
+### Methods Summary
+
+RNA-seq reads were processed using FastQC, MultiQC, fastp, HISAT2, samtools, and featureCounts. Gene-level count data were imported into R and analysed using DESeq2. Variance-stabilising transformation was used for exploratory visualization. PCA, volcano plots, top DEG heatmaps, and sample distance heatmaps were generated. Significant genes were analysed for GO Biological Process and KEGG pathway enrichment using clusterProfiler and org.Mm.eg.db.
+
+### Output Files
+
+- `scripts/10_visualization_pathway_analysis.R`
+- `results/visualization_pathway/visualization_DEG_GO_KEGG_summary.csv`
+- `results/visualization_pathway/vst_normalized_count_matrix_visualization.csv`
+- `results/visualization_pathway/figures/`
+- `results/visualization_pathway/enrichment/`
+- `reports/final_report.Rmd`
+- `docs/final_report.html`
+
+### Final Report
+
+The final HTML report is available at:
+
+`docs/final_report.html`
+
+### DEG, GO and KEGG Summary
+
+Please see:
+
+`results/visualization_pathway/visualization_DEG_GO_KEGG_summary.csv`
+
+This file reports the total genes tested, significant DEGs, upregulated genes, downregulated genes, top 5 GO Biological Process terms, and top 3 KEGG pathways for each contrast.
