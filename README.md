@@ -33,3 +33,24 @@ Final combined count matrix:
 
 - `results/counts/combined_gene_count_matrix.tsv`
 - `results/counts/combined_gene_count_matrix.tsv.gz`
+
+## Differential Gene Expression Analysis
+
+Differential gene expression analysis was performed using DESeq2. The combined gene count matrix was imported into R, matched with the sample metadata, filtered for low-count genes, and analysed using the design formula `~ Condition`.
+
+### DEG Summary
+
+| Contrast | Total genes tested | Significant DEGs | Upregulated | Downregulated |
+|---|---:|---:|---:|---:|
+| InfluenzaA_Day4_vs_NonInfected_Day0 | 29722 | 21 | 19 | 2 |
+| InfluenzaA_Day8_vs_NonInfected_Day0 | 29722 | 291 | 174 | 117 |
+
+Significant DEGs were defined as genes with adjusted p-value < 0.05 and absolute log2 fold change ≥ 1.
+
+### Output files
+
+- `scripts/09_deseq2_analysis.R`
+- `results/deseq2/DEG_summary.csv`
+- `results/deseq2/vst_normalized_count_matrix.csv`
+- `results/deseq2/DESeq2_significant_DEGs_InfluenzaA_Day4_vs_NonInfected_Day0.csv`
+- `results/deseq2/DESeq2_significant_DEGs_InfluenzaA_Day8_vs_NonInfected_Day0.csv`
