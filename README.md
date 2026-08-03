@@ -25,5 +25,11 @@ The trimmed paired-end RNA-seq reads were aligned to the Mus musculus GRCm39 ref
 
 Samples with overall alignment rate below 75% were flagged as low-alignment samples. A low alignment rate may result from poor read quality, adapter contamination, wrong reference genome, sample contamination, or using reads from a different organism.
 
-SRRXXXXXXX had an alignment rate below 75%. This may be due to poor sequencing quality, adapter contamination, sample contamination, or mismatch between the reads and the selected reference genome.
+## Combined Count Matrix
 
+featureCounts was run on UseGalaxy in separate batches for samples belonging to the same BioProject. The individual Galaxy count outputs were downloaded, copied into `results/counts/galaxy_runs/`, and merged by `Geneid` using the script `scripts/08_combine_galaxy_counts.py`.
+
+Final combined count matrix:
+
+- `results/counts/combined_gene_count_matrix.tsv`
+- `results/counts/combined_gene_count_matrix.tsv.gz`
