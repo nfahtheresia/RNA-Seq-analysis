@@ -13,7 +13,7 @@
 # Compressed outputs
 *.zip
 *.tar
-*.gz
+# *.gz
 
 # Large project data folders
 data/raw/*
