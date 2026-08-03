@@ -1,7 +1,10 @@
-SampleID	Condition	Replicate
-SRR5364316	NonInfected_Day0	Rep1
-SRR5364317	NonInfected_Day0	Rep2
-SRR5364318	InfluenzaA_Day4	Rep1
-SRR5364321	InfluenzaA_Day8	Rep1
-SRR5364323	InfluenzaA_Day4	Rep2
-SRR5364330	InfluenzaA_Day8	Rep2
+SampleID	Condition	Replicate	Treatment	Timepoint
+SRR5364316	NonInfected_Day0	Rep1	Control	Day0
+SRR5364317	NonInfected_Day0	Rep2	Control	Day0
+SRR5364322	NonInfected_Day0	Rep3	Control	Day0
+SRR5364318	InfluenzaA_Day4	Rep1	Infected	Day4
+SRR5364323	InfluenzaA_Day4	Rep2	Infected	Day4
+SRR5364219	InfluenzaA_Day4	Rep3	Infected	Day4
+SRR5364321	InfluenzaA_Day8	Rep1	Infected	Day8
+SRR5364330	InfluenzaA_Day8	Rep2	Infected	Day8
+SRR5364325	InfluenzaA_Day8	Rep3	Infected	Day8
