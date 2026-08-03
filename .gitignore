@@ -114,3 +114,4 @@ tmp_fasterq/
 *.bai
 *.cram
 *.crai
+.Rproj.user
